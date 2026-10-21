@@ -1,0 +1,139 @@
+/* 3Dマップの表示に使う見た目（構内ナビの style.css から取り出したもの） */
+:root {
+  --navy: #1b2a47;
+  --accent: #0f9d8a;
+  --accent-dark: #0b7e6f;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --line: #d8dee8;
+  --text: #1b2a47;
+  --sub: #5d6b80;
+  --danger: #c62828;
+  --radius: 12px;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  color: var(--text);
+  background: #e9edf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.map {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* 地図の上で指を動かしたときに画面がスクロールしないようにする */
+  touch-action: none;
+  background: repeating-linear-gradient(135deg, #eef2f6 0 10px, #e6ebf2 10px 12px);
+}
+
+.map canvas {
+  display: block;
+}
+
+.map.is-first-person canvas {
+  cursor: grab;
+}
+
+.map.is-first-person canvas:active {
+  cursor: grabbing;
+}
+
+/* 文字の層はタッチ操作を邪魔しないようにする */
+.map-labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.floor-label {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.point-label {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+.point-label--exit {
+  background: var(--navy);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 番線の名前（背景は路線の色をスクリプトで付ける） */
+.point-label--track {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 階段・エスカレーター・エレベーターの案内（色は1人称の頭上サインとそろえる） */
+.point-label--connector {
+  color: #fff;
+  font-weight: bold;
+}
+
+.point-label--stairs {
+  background: #ea580c;
+}
+
+.point-label--escalator {
+  background: #ca8a04;
+}
+
+.point-label--elevator {
+  background: #c026d3;
+}
+
+/* 地下街・通路・建物の名前の看板 */
+.passage-label {
+  padding: 3px 10px;
+  border-radius: 4px;
+  border-top: 3px solid #facc15;
+  background: rgba(30, 41, 59, 0.9);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.move-label {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #9333ea;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.self-label {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+

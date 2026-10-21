@@ -1,0 +1,1318 @@
+{
+ "_note": "行き先の検索用データ（tools/build-tokyo-3d.mjs が作る）。出口の id は 3Dマップ（tokyo-3d.json）の出口と同じ。",
+ "_sources": [
+  "国土交通省「東京駅周辺屋内地図オープンデータ」（G空間情報センター）を加工して作成 https://www.geospatial.jp/ckan/dataset/mlit-indoor-tokyo-r2",
+  "部屋・設備の種類のコード：国土地理院「階層別屋内地理空間情報データ仕様書（案）」"
+ ],
+ "station": "東京駅",
+ "exits": [
+  {
+   "id": "exit-tokyo-m7",
+   "name": "M7出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（1階・地上）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-m4",
+   "name": "M4出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（1階・地上）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-m5",
+   "name": "M5出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-m6",
+   "name": "M6出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-2",
+   "name": "2出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（1階・地上）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a10",
+   "name": "A10出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a14",
+   "name": "A14出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a13",
+   "name": "A13出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a12",
+   "name": "A12出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a11",
+   "name": "A11出口（日比谷駅付近）・西側",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a11-2",
+   "name": "A11出口（日比谷駅付近）・東側",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-6",
+   "name": "6出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-1",
+   "name": "1出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-5a",
+   "name": "5a出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-2",
+   "name": "2出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-4",
+   "name": "4出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-5b",
+   "name": "5b出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-3",
+   "name": "3出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-nijubashimae-7",
+   "name": "7出口（二重橋前駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c2a",
+   "name": "C2a出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c2b",
+   "name": "C2b出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c1",
+   "name": "C1出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c3",
+   "name": "C3出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c5",
+   "name": "C5出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c6b",
+   "name": "C6b出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c7",
+   "name": "C7出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c9",
+   "name": "C9出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c10",
+   "name": "C10出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c13a",
+   "name": "C13a出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c8",
+   "name": "C8出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c4",
+   "name": "C4出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c6a",
+   "name": "C6a出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c13b",
+   "name": "C13b出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c2c",
+   "name": "C2c出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c14",
+   "name": "C14出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a12",
+   "name": "A12出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a11",
+   "name": "A11出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a13",
+   "name": "A13出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-e2",
+   "name": "E2出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-e1",
+   "name": "E1出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b8",
+   "name": "B8出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b6",
+   "name": "B6出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b5",
+   "name": "B5出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b3",
+   "name": "B3出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a1",
+   "name": "A1出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a2",
+   "name": "A2出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a3",
+   "name": "A3出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a5",
+   "name": "A5出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a8",
+   "name": "A8出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a4",
+   "name": "A4出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b7",
+   "name": "B7出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b4",
+   "name": "B4出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b1",
+   "name": "B1出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a10",
+   "name": "A10出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a9",
+   "name": "A9出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-a7",
+   "name": "A7出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b2",
+   "name": "B2出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-n2",
+   "name": "N2出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-s1",
+   "name": "S1出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-s3",
+   "name": "S3出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-s2",
+   "name": "S2出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-n1",
+   "name": "N1出口（東銀座駅付近・三越口）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a3",
+   "name": "A3出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a2",
+   "name": "A2出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a4",
+   "name": "A4出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-a1",
+   "name": "A1出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-a2",
+   "name": "A2出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-4",
+   "name": "4出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-5",
+   "name": "5出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-6",
+   "name": "6出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-higashiginza-3",
+   "name": "3出口（東銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c9",
+   "name": "C9出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c8",
+   "name": "C8出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c7",
+   "name": "C7出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c5",
+   "name": "C5出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c6",
+   "name": "C6出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c2",
+   "name": "C2出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b10",
+   "name": "B10出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-b9",
+   "name": "B9出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c1",
+   "name": "C1出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c4",
+   "name": "C4出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-ginza-c3",
+   "name": "C3出口（銀座駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-a4",
+   "name": "A4出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-a5",
+   "name": "A5出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-m9",
+   "name": "M9出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-m10",
+   "name": "M10出口（東京駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d1",
+   "name": "D1出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b4",
+   "name": "B4出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b1",
+   "name": "B1出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b3",
+   "name": "B3出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b2",
+   "name": "B2出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b5",
+   "name": "B5出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b6",
+   "name": "B6出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-b7",
+   "name": "B7出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d2",
+   "name": "D2出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d3",
+   "name": "D3出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d4",
+   "name": "D4出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d5",
+   "name": "D5出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-d6",
+   "name": "D6出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b5",
+   "name": "B5出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b4",
+   "name": "B4出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d9",
+   "name": "D9出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d8",
+   "name": "D8出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d7",
+   "name": "D7出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d4",
+   "name": "D4出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d2",
+   "name": "D2出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d3",
+   "name": "D3出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d6",
+   "name": "D6出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d1",
+   "name": "D1出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下1階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-yurakucho-d5",
+   "name": "D5出口（有楽町駅付近）",
+   "description": "地下鉄・地下通路の出口（1階・地上）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a8",
+   "name": "A8出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a7",
+   "name": "A7出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a6",
+   "name": "A6出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a1",
+   "name": "A1出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a0",
+   "name": "A0出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-hibiya-a9",
+   "name": "A9出口（日比谷駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b2c",
+   "name": "B2c出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b2b",
+   "name": "B2b出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b6",
+   "name": "B6出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b7",
+   "name": "B7出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b8a",
+   "name": "B8a出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b8b",
+   "name": "B8b出口（大手町駅付近・JR八重洲口）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b10",
+   "name": "B10出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b2a",
+   "name": "B2a出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b3",
+   "name": "B3出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-b1",
+   "name": "B1出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c11",
+   "name": "C11出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-otemachi-c12",
+   "name": "C12出口（大手町駅付近）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "exit-tokyo-4",
+   "name": "4出口（東京駅付近・京葉線）",
+   "description": "地下鉄・地下通路の出口（地下2階）。駅の名前は位置から推定したものです",
+   "kind": "exit"
+  },
+  {
+   "id": "entrance-1-0",
+   "name": "JR東京駅 日本橋口",
+   "description": "JR東京駅の入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-0",
+   "name": "丸ビルの入口（大名小路東京駅側）",
+   "description": "丸ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-1",
+   "name": "丸ビルの入口（丸の内仲通り皇居側）",
+   "description": "丸ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-2",
+   "name": "丸ビルの入口（東京メトロ 千代田線二重橋前駅連絡口）",
+   "description": "丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-3",
+   "name": "丸ビルの入口（東京メトロ 丸ノ内線東京駅連絡口）",
+   "description": "丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-4",
+   "name": "丸ビルの入口（新丸ビル連絡口）",
+   "description": "丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-5",
+   "name": "丸ビルの入口（行幸通り地下通路・新丸ビル連絡口）",
+   "description": "丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-3-6",
+   "name": "丸ビルの入口（丸の内仲通り側）",
+   "description": "丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-0",
+   "name": "新丸ビルの入口（丸の内仲通り・皇居側）",
+   "description": "新丸ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-1",
+   "name": "新丸ビルの入口（大名小路・東京駅側）",
+   "description": "新丸ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-2",
+   "name": "新丸ビルの入口（丸の内1st側）",
+   "description": "新丸ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-3",
+   "name": "新丸ビルの入口（日本工業倶楽部会館三菱UFJ信託銀行本店ビル連絡口）・西側",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-4",
+   "name": "新丸ビルの入口（日本工業倶楽部会館三菱UFJ信託銀行本店ビル連絡口）・東側",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-5",
+   "name": "新丸ビルの入口（行幸通り地下通路・丸ビル側）",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-6",
+   "name": "新丸ビルの入口（丸ビル連絡口）",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-7",
+   "name": "新丸ビルの入口（JR東京駅・東京メトロ丸ノ内線東京駅側）",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-4-8",
+   "name": "新丸ビルの入口（東京海上日動ビル新館と直結（都営三田線大手町駅連絡））",
+   "description": "新丸ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-5-0",
+   "name": "TOKIAの入口（JR東京駅方面）",
+   "description": "TOKIAの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-5-1",
+   "name": "TOKIAの入口（有楽町・東京国際フォーラム方面）",
+   "description": "TOKIAの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-7-0",
+   "name": "イーヨの入口（三菱UFJ信託銀行本店ビル連絡口）",
+   "description": "イーヨの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-9-0",
+   "name": "丸の内オアゾの入口（JR東京駅方面）",
+   "description": "丸の内オアゾの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-9-1",
+   "name": "丸の内オアゾの入口（丸の内北口ビル）",
+   "description": "丸の内オアゾの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-9-2",
+   "name": "丸の内オアゾの入口（東京メトロ大手町駅方面）",
+   "description": "丸の内オアゾの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-9-3",
+   "name": "丸の内オアゾの入口（新丸の内センタービル）",
+   "description": "丸の内オアゾの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-9-4",
+   "name": "丸の内オアゾの入口（東京メトロ丸ノ内線東京駅連絡口）",
+   "description": "丸の内オアゾの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-10-0",
+   "name": "三菱商事ビルの入口（東京メトロ）",
+   "description": "三菱商事ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-10-1",
+   "name": "三菱商事ビルの入口（丸ビル東京駅方面）",
+   "description": "三菱商事ビルの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-11-0",
+   "name": "KITTEの入口（皇居外苑）",
+   "description": "KITTEの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-11-1",
+   "name": "KITTEの入口（JR東京駅）",
+   "description": "KITTEの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-11-2",
+   "name": "KITTEの入口（東京ビル有楽町駅）",
+   "description": "KITTEの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-11-3",
+   "name": "KITTEの入口（東京ビル 有楽町方面）",
+   "description": "KITTEの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-11-4",
+   "name": "KITTEの入口（JR京葉線）",
+   "description": "KITTEの入口（地下2階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-12-0",
+   "name": "東京交通会館の入口（地下鉄有楽町線[D8]連絡口）",
+   "description": "東京交通会館の入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-12-1",
+   "name": "東京交通会館の入口（イトシア連絡通路）",
+   "description": "東京交通会館の入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-0",
+   "name": "有楽町マリオンの入口（東口（JR側））",
+   "description": "有楽町マリオンの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-1",
+   "name": "有楽町マリオンの入口（東口（晴海通り側））",
+   "description": "有楽町マリオンの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-2",
+   "name": "有楽町マリオンの入口（南口（晴海通り側））",
+   "description": "有楽町マリオンの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-3",
+   "name": "有楽町マリオンの入口（西口）",
+   "description": "有楽町マリオンの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-4",
+   "name": "有楽町マリオンの入口（北口（JR側））",
+   "description": "有楽町マリオンの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-14-5",
+   "name": "有楽町マリオンの入口（地下鉄連絡口）",
+   "description": "有楽町マリオンの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-15-0",
+   "name": "オーテモリの入口（ファーストスクエア）",
+   "description": "オーテモリの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-15-1",
+   "name": "オーテモリの入口（東京メトロ東西線）",
+   "description": "オーテモリの入口（地下2階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-15-2",
+   "name": "オーテモリの入口（東京メトロ丸ノ内線）",
+   "description": "オーテモリの入口（地下2階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-16-0",
+   "name": "東京国際フォーラムの入口（ガラス棟入口）・北東側",
+   "description": "東京国際フォーラムの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-16-1",
+   "name": "東京国際フォーラムの入口（ガラス棟入口）・南西側",
+   "description": "東京国際フォーラムの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-16-2",
+   "name": "東京国際フォーラムの入口（有楽町駅）",
+   "description": "東京国際フォーラムの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-16-3",
+   "name": "東京国際フォーラムの入口（東京駅）",
+   "description": "東京国際フォーラムの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-6-0",
+   "name": "丸の内ブリックスクエアの入口（1階・地上）・南西側",
+   "description": "丸の内ブリックスクエアの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-6-1",
+   "name": "丸の内ブリックスクエアの入口（1階・地上）・北東側",
+   "description": "丸の内ブリックスクエアの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-8-0",
+   "name": "三菱UFJ信託銀行本店ビルの入口（1階・地上）・西側",
+   "description": "三菱UFJ信託銀行本店ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-8-1",
+   "name": "三菱UFJ信託銀行本店ビルの入口（1階・地上）・東側",
+   "description": "三菱UFJ信託銀行本店ビルの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-13-0",
+   "name": "有楽町イトシアの入口（地下1階）",
+   "description": "有楽町イトシアの入口（地下1階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-17-0",
+   "name": "鉄鋼ビルディングの入口（1階・地上）・南西側",
+   "description": "鉄鋼ビルディングの入口（1階・地上）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-17-1",
+   "name": "鉄鋼ビルディングの入口（地下2階）",
+   "description": "鉄鋼ビルディングの入口（地下2階）",
+   "kind": "entrance"
+  },
+  {
+   "id": "entrance-17-2",
+   "name": "鉄鋼ビルディングの入口（1階・地上）・北東側",
+   "description": "鉄鋼ビルディングの入口（1階・地上）",
+   "kind": "entrance"
+  }
+ ],
+ "places": [
+  {
+   "name": "丸ビル",
+   "keywords": [
+    "まるびる",
+    "丸の内ビルディング"
+   ],
+   "exitId": "entrance-3-0",
+   "exitIds": [
+    "entrance-3-0",
+    "entrance-3-1",
+    "entrance-3-2",
+    "entrance-3-3",
+    "entrance-3-4",
+    "entrance-3-5",
+    "entrance-3-6"
+   ]
+  },
+  {
+   "name": "新丸ビル",
+   "keywords": [
+    "しんまるびる",
+    "新丸の内ビルディング"
+   ],
+   "exitId": "entrance-4-0",
+   "exitIds": [
+    "entrance-4-0",
+    "entrance-4-1",
+    "entrance-4-2",
+    "entrance-4-3",
+    "entrance-4-4",
+    "entrance-4-5",
+    "entrance-4-6",
+    "entrance-4-7",
+    "entrance-4-8"
+   ]
+  },
+  {
+   "name": "TOKIA",
+   "keywords": [
+    "ときあ",
+    "東京ビル"
+   ],
+   "exitId": "entrance-5-0",
+   "exitIds": [
+    "entrance-5-0",
+    "entrance-5-1"
+   ]
+  },
+  {
+   "name": "イーヨ",
+   "keywords": [
+    "いーよ",
+    "iiyo",
+    "丸の内永楽ビルディング"
+   ],
+   "exitId": "entrance-7-0",
+   "exitIds": [
+    "entrance-7-0"
+   ]
+  },
+  {
+   "name": "丸の内オアゾ",
+   "keywords": [
+    "おあぞ",
+    "OAZO"
+   ],
+   "exitId": "entrance-9-0",
+   "exitIds": [
+    "entrance-9-0",
+    "entrance-9-1",
+    "entrance-9-2",
+    "entrance-9-3",
+    "entrance-9-4"
+   ]
+  },
+  {
+   "name": "三菱商事ビル",
+   "keywords": [
+    "みつびししょうじ"
+   ],
+   "exitId": "entrance-10-0",
+   "exitIds": [
+    "entrance-10-0",
+    "entrance-10-1"
+   ]
+  },
+  {
+   "name": "KITTE",
+   "keywords": [
+    "きって",
+    "JPタワー"
+   ],
+   "exitId": "entrance-11-0",
+   "exitIds": [
+    "entrance-11-0",
+    "entrance-11-1",
+    "entrance-11-2",
+    "entrance-11-3",
+    "entrance-11-4"
+   ]
+  },
+  {
+   "name": "東京交通会館",
+   "keywords": [
+    "こうつうかいかん"
+   ],
+   "exitId": "entrance-12-0",
+   "exitIds": [
+    "entrance-12-0",
+    "entrance-12-1"
+   ]
+  },
+  {
+   "name": "有楽町マリオン",
+   "keywords": [
+    "まりおん"
+   ],
+   "exitId": "entrance-14-0",
+   "exitIds": [
+    "entrance-14-0",
+    "entrance-14-1",
+    "entrance-14-2",
+    "entrance-14-3",
+    "entrance-14-4",
+    "entrance-14-5"
+   ]
+  },
+  {
+   "name": "オーテモリ",
+   "keywords": [
+    "おーてもり",
+    "大手町タワー"
+   ],
+   "exitId": "entrance-15-0",
+   "exitIds": [
+    "entrance-15-0",
+    "entrance-15-1",
+    "entrance-15-2"
+   ]
+  },
+  {
+   "name": "東京国際フォーラム",
+   "keywords": [
+    "こくさいふぉーらむ",
+    "国際フォーラム"
+   ],
+   "exitId": "entrance-16-0",
+   "exitIds": [
+    "entrance-16-0",
+    "entrance-16-1",
+    "entrance-16-2",
+    "entrance-16-3"
+   ]
+  },
+  {
+   "name": "丸の内ブリックスクエア",
+   "keywords": [
+    "ぶりっくすくえあ",
+    "ブリックスクエア"
+   ],
+   "exitId": "entrance-6-0",
+   "exitIds": [
+    "entrance-6-0",
+    "entrance-6-1"
+   ]
+  },
+  {
+   "name": "三菱UFJ信託銀行本店ビル",
+   "keywords": [
+    "みつびしゆーえふじぇー",
+    "三菱UFJ信託銀行"
+   ],
+   "exitId": "entrance-8-0",
+   "exitIds": [
+    "entrance-8-0",
+    "entrance-8-1"
+   ]
+  },
+  {
+   "name": "有楽町イトシア",
+   "keywords": [
+    "いとしあ",
+    "ITOCiA"
+   ],
+   "exitId": "entrance-13-0",
+   "exitIds": [
+    "entrance-13-0"
+   ]
+  },
+  {
+   "name": "鉄鋼ビルディング",
+   "keywords": [
+    "てっこうびる",
+    "鉄鋼ビル"
+   ],
+   "exitId": "entrance-17-0",
+   "exitIds": [
+    "entrance-17-0",
+    "entrance-17-1",
+    "entrance-17-2"
+   ]
+  }
+ ]
+}

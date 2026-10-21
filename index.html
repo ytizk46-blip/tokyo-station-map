@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京駅 3Dマップ</title>
+    <style>
+      /* 東京駅の3Dマップを見るページ。npm run dev で開く */
+      html, body { margin: 0; height: 100%; overflow: hidden; }
+      #wrap { position: fixed; inset: 0; }
+      .bar {
+        position: fixed; top: 8px; left: 8px; z-index: 10;
+        display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
+        padding: 6px; border-radius: 8px; background: rgba(255, 255, 255, 0.9);
+        font: 13px sans-serif;
+      }
+      .bar button { padding: 4px 10px; }
+      .bar button.is-active { font-weight: bold; outline: 2px solid #0284c7; }
+      #info { position: fixed; bottom: 8px; left: 8px; z-index: 10; padding: 6px 10px; border-radius: 8px; background: rgba(255, 255, 255, 0.9); font: 13px sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="wrap"><div id="map" class="map"></div></div>
+    <div class="bar">
+      <button data-floor="" class="is-active">全階</button>
+      <button data-floor="1F">1F</button>
+      <button data-floor="B1">B1</button>
+      <button data-floor="B2">B2</button>
+      <button id="walk">1人称で歩く</button>
+      <button id="overview">3人称に戻る</button>
+    </div>
+    <p id="info">地点をクリックすると名前を表示し、そこから1人称で歩けます。1人称：WASD・矢印キーで歩く／Space で階段などに乗る</p>
+    <script type="module">
+      import './src/map.css'
+      import { createMap } from './src/map3d.js'
+      import { listOrigins } from './src/route-finder.js'
+      import data from './src/data/tokyo-3d.json'
+
+      const info = document.querySelector('#info')
+      const map = createMap({
+        container: document.querySelector('#map'),
+        data,
+        onSelectPoint(point) {
+          info.textContent = `${point.name ?? point.id}（${point.type}・${point.floor}・id: ${point.id}）`
+          map.placeSelfAt(point.id)
+        },
+        onFreeWalk({ floor, connector }) {
+          info.textContent = `${floor.name}${connector ? `　Space：${connector}` : ''}`
+        },
+      })
+      const origin = listOrigins(data).find((o) => o.id === data.defaultRoute.origin)
+      map.placeSelfAt(origin.point)
+
+      document.querySelectorAll('[data-floor]').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('[data-floor]').forEach((b) => b.classList.toggle('is-active', b === button))
+          map.setFloorFilter(button.dataset.floor)
+        })
+      })
+      document.querySelector('#walk').addEventListener('click', () => map.startFreeWalk())
+      document.querySelector('#overview').addEventListener('click', () => map.showOverview())
+
+      // キーボードで歩く（トップ画面と同じ割り当て）
+      const keys = new Set()
+      const keyMap = { ArrowUp: 'up', KeyW: 'up', ArrowDown: 'down', ArrowLeft: 'left', KeyA: 'left', ArrowRight: 'right', KeyD: 'right', KeyS: 'down' }
+      function applyKeys() {
+        const x = (keys.has('right') ? 1 : 0) - (keys.has('left') ? 1 : 0)
+        const y = (keys.has('up') ? 1 : 0) - (keys.has('down') ? 1 : 0)
+        map.setJoystick(x, y)
+      }
+      window.addEventListener('keydown', (event) => {
+        if (map.mode !== 'free') return
+        if (event.code === 'Space') {
+          event.preventDefault()
+          map.rideConnector()
+          return
+        }
+        if (!keyMap[event.code]) return
+        event.preventDefault()
+        keys.add(keyMap[event.code])
+        applyKeys()
+      })
+      window.addEventListener('keyup', (event) => {
+        if (!keyMap[event.code]) return
+        keys.delete(keyMap[event.code])
+        applyKeys()
+      })
+      window.__map = map
+    </script>
+  </body>
+</html>
